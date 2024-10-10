@@ -8,6 +8,7 @@
     --cor4: #b9b922;
     --cor5: rgb(183, 255, 0); 
     --cor6: rgb(99, 74, 0);
+    --cor7: rgb(114, 175, 0);
 }
 
 *{
@@ -160,9 +161,9 @@ form > .botao > span{
 }
 
 #agendar-servico {
-    background-color: var(--cor4);
-    width: 70%;
-    height: 50%;
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor7));
+    width: 80%;
+    height: 70%;
     margin: 1em;
     padding: 1.2em;
     border-radius: 8px;
@@ -171,17 +172,25 @@ form > .botao > span{
 #agendar-servico > p {
     text-align: center;
     font-weight: bold;
-    margin-bottom: 14px;
     font-size: 19px;
-}
+    margin-bottom: 30px;
+    background-color: var(--cor3);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+} 
 
 #agendar-servico > form {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: left;
 }
 
 #agendar-servico > form > label {
     margin: 10px 0;
+    font-weight: bold;
 }
 
 #agendar-servico > form > select,
@@ -190,20 +199,25 @@ form > .botao > span{
     border-radius: 5px;
     border: 1px solid #ccc;
     width: 80%;
-    margin: 10px 0;
+    margin: 1px 0;
 }
 
 #agendar-servico > form > button {
     margin-top: 2em;
-    padding: 0.7em 1.2em;
+    padding: 0.5em;
     border-radius: 5px;
     border: none;
-    background-color: var(--cor2);
+    background-color: var(--cor0);
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s;
+    font-weight: bold;
+    width: 30%;
+    align-self: center;
+    color: white;
 }
 
 #agendar-servico > form > button:hover {
-    background-color: var(--cor2);
+    transition: transform 0.3s;
+    transform: scale(1.02);
 }
+
